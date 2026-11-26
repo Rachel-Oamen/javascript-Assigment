@@ -2,21 +2,20 @@ const prompt = require("prompt-sync")();
 let sum = 0;
 let count =0;
 
-let number = Number(prompt("Enter any Digit "));
+let number = Number(prompt("Enter a Number( -1 to Stop ):"));
 
-console.log("Enter -1 to Exit the Program")
-
- while (number != -1) {
+ 
+while (number !== -1) {
  
  
- sum = sum + number;
+    sum = sum + number;
  
-count = count + 1;
+    count = count + 1;
 
-average = sum / count;
+    let average = sum / count;
 
-console.log("Average is = " + average);
+    console.log("Average is = " + average);
 
-let number = Number(prompt("Enter any Digit "));
-
- }
+    let number = Number(prompt("Enter a Number Again "));
+}
+ 
